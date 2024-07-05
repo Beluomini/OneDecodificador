@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/styles.css" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Criptografa e descriptografa facilmente. Online code and decode text. Encripitador Online">
+    <meta name="keywords" content="encriptador de texto, criptografia, descriptografia, online, Alura, Oracle ONE">
+
+    <title>One Decodificador</title>
+
+  </head>
+
+  <body class="long-content">
+    <header>
+      <img id="logo" src="./src/assets/alura-logo.svg" alt="Logo Alura" />
+    </header>
+
+    <main>
+      <section id="enter-section">
+        <form>
+          <label for="enter-field" class="sr-only">Insira seu texto aqui</label>
+          <textarea
+            id="enter-field"
+            class="long-content"
+            name="enter-field"
+            placeholder="Digite seu texto aqui"
+          ></textarea>
+          <p id="enter-info">
+            <img src="./src/assets/info-icon.svg" alt="Icone de informação" />
+            <span>Apenas letras minúsculas e sem acento. </span>
+          </p>
+        </form>
+        <div id="enter-footer">
+          <button type="button" class="button first-button" id="encrypt">
+            Criptografar
+          </button>
+          <button type="button" class="button" id="decrypt">Descriptografar</button>
+        </di>
+      </section>
+
+      <section id="out-section">
+        <div id="no-out-container" class="">
+          <img src="./src/assets/illustration.svg" alt="Sem Texto" />
+          <h1>Nenhum texto encontrado</h1>
+          <p>Digite o texto que deseja criptografar ou descriptografar.</p>
+        </div>
+
+        <div id="out-container" class="hidden">
+          <p id="out-field" class="long-content"></p>
+          <button
+            type="button"
+            class="button first-button"
+            id="copy-button"
+            onclick="copyText()"
+          >
+            Copiar
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="author">
+      <p>
+        Made by <a href="https://github.com/Beluomini">Lucas Beluomini</a>
+      </p>
+    </footer>
+
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
