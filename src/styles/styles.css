@@ -1,0 +1,292 @@
+header {
+  width: 100%;
+  margin-top: 0.8rem;
+}
+
+#logo {
+  height: 4.8rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#enter-section {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  margin-top: 5.8rem;
+}
+
+#enter-field {
+  resize: none;
+  width: 100%;
+  min-height: 30rem;
+  border: none;
+  font-size: 3.2rem;
+  font-style: normal;
+  line-height: 150%;
+  color: var(--blue-500);
+  background-color: var(--blue-950);
+}
+
+#enter-field:focus {
+  outline: none;
+}
+
+#enter-field::placeholder {
+  color: var(--blue-200);
+}
+
+#enter-info {
+  margin-top: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+#enter-info img {
+  width: 1.4rem;
+}
+
+#enter-info span {
+  color: var(--blue-400);
+  font-size: 1.2rem;
+  line-height: 150%;
+}
+
+#enter-footer {
+  margin-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+
+  font-size: 1.4rem;
+}
+
+.button {
+  width: 100%;
+  padding: 2.4rem;
+
+  font-size: 1.6rem;
+  line-height: normal;
+  text-align: center;
+
+  background-color: transparent;
+  border: 2px solid var(--blue-600);
+  color: var(--blue-100);
+  border-radius: 1.2rem;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--blue-700);
+}
+
+.first-button {
+  background-color: var(--blue-600);
+  color: var(--white);
+}
+
+.first-button:hover {
+  background-color: var(--blue-500);
+}
+
+#out-section {
+  margin-top: 6.4rem;
+}
+
+#no-out-container {
+  padding: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+
+  background-color: var(--blue-50);
+  color: var(--blue-800);
+  text-align: center;
+
+  border-radius: 1.6rem;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0);
+}
+
+#no-out-container img {
+  display: none;
+}
+
+#no-out-container h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#no-out-container p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#out-container {
+  padding: 3.2rem;
+  min-height: 30rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--blue-900);
+
+  border-radius: 3.2rem;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0);
+}
+
+#out-field {
+  color: var(--blue-100);
+  font-size: 2.4rem;
+  font-style: normal;
+  line-height: 150%;
+}
+
+#copy-button {
+  margin-top: 3.6rem;
+}
+
+#author {
+  margin-top: 4.4rem;
+  padding: 2rem 0;
+
+  color: var(--blue-200);
+  text-align: center;
+}
+
+#author a {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  main {
+    height: 100%;
+    justify-content: space-between;
+  }
+
+  form {
+    margin-top: 11rem;
+    height: 100%;
+  }
+
+  #enter-field {
+    min-height: 40rem;
+  }
+
+  #enter-footer {
+    flex-direction: row;
+    gap: 2.4rem;
+  }
+
+  #author {
+    margin-top: 4.4rem;
+    padding-bottom: 0;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    width: 100%;
+    max-width: 1440px;
+    padding-left: 12rem;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 7rem;
+    overflow-x: hidden;
+  }
+
+  #enter-section {
+    flex: 1;
+    height: 100%;
+    padding-bottom: 3.2rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    min-height: auto;
+    max-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.4rem;
+  }
+
+  #enter-field {
+    min-height: auto;
+  }
+
+  #out-section {
+    margin-top: 0;
+    width: 100%;
+    max-width: 35%;
+    height: 100%;
+  }
+
+  #out-container {
+    min-height: auto;
+    max-height: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem;
+  }
+
+  #out-field {
+    overflow-y: auto;
+  }
+
+  #no-out-container {
+    min-height: auto;
+    max-height: 100%;
+    height: 100% !important;
+
+    display: grid;
+    place-content: center;
+  }
+
+  #no-out-container img {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #no-out-container h1 {
+    margin-top: 1.6rem;
+  }
+
+  #author {
+    margin-top: 5rem;
+    margin-bottom: -2rem;
+
+    font-size: 1.4rem;
+  }
+}
